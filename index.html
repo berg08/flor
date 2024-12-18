@@ -4,24 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🥀</title>
+    <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
-
-    <style>
-      body.not-loaded .flower {
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-      }
-
-      body.loaded .flower {
-        opacity: 1;
-      }
-    </style>
   </head>
 
   <body class="not-loaded">
-    <h1>Uma flor, para uma flor mais bela ainda 🌹</h1>
+    <h1>Uma flor, para outra flor ainda mais bela 🌹</h1>
     <p class="my-name">Code by berg</p>
     <div class="rain"></div>
     <div class="flower" id="animation-flower">
@@ -69,13 +59,6 @@
       <div class="flower__glass"></div>
     </div>
 
-    <script src="script.js">
-      document.addEventListener("DOMContentLoaded", () => {
-        setTimeout(() => {
-          document.body.classList.remove("not-loaded");
-          document.body.classList.add("loaded");
-        }, 4000); // 3 segundos de atraso
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
